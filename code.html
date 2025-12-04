@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yukti Peepal Foundation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        header { background-color: #4CAF50; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #333; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        section { padding: 40px; max-width: 1200px; margin: auto; }
+        .hero { background-image: url('https://via.placeholder.com/1200x400?text=Yukti+Peepal+Foundation'); background-size: cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero h1 { font-size: 3em; }
+        .programs { display: flex; flex-wrap: wrap; justify-content: space-around; }
+        .program { width: 30%; margin: 10px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; text-align: center; }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .programs { flex-direction: column; } .program { width: 100%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yukti Peepal Foundation</h1>
+        <p>Empowering Communities Through Education and Skill Development</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to Yukti Peepal Foundation</h1>
+            <p>Dedicated to transforming lives through innovative education and social initiatives.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Yukti Peepal Foundation is a non-profit organization committed to bridging the gap in education and skill development in underserved communities. Founded in [Year], we focus on empowering individuals, especially youth and women, to achieve sustainable livelihoods and social change.</p>
+        <p>Our mission: To create opportunities for holistic development through education, vocational training, and community outreach.</p>
+    </section>
+    <section id="programs">
+        <h2>Our Programs</h2>
+        <div class="programs">
+            <div class="program">
+                <h3>Education Initiatives</h3>
+                <p>Providing access to quality education for children in rural areas, including scholarships and learning centers.</p>
+            </div>
+            <div class="program">
+                <h3>Skill Development</h3>
+                <p>Vocational training programs in areas like IT, healthcare, and entrepreneurship to build employable skills.</p>
+            </div>
+            <div class="program">
+                <h3>Community Empowerment</h3>
+                <p>Workshops on health, hygiene, and women's rights to foster self-reliance and social awareness.</p>
+            </div>
+        </div>
+    </section>
+    <section id="impact">
+        <h2>Our Impact</h2>
+        <p>Since inception, we've impacted over [Number] lives through our programs. Key achievements include [e.g., 500+ students educated, 200+ trained in skills]. Join us in making a difference!</p>
+        <p>Donate or volunteer today.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@yuktipeepalfoundation.org</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+        <p>Address: [Foundation Address, City, India]</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Yukti Peepal Foundation. All rights reserved.</p>
+    </footer>
+    <script>
+        // Simple JS for form submission (placeholder - replace with real backend)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+        });
+    </script>
+</body>
+</html>
